@@ -1,0 +1,8 @@
+main {
+  background: linear-gradient(30deg, $color-three 0%, $color-four 100%);
+
+  .container-home {
+    min-height: calc(100vh - (2 * 80px));
+  }
+}
+

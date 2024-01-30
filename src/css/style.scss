@@ -1,0 +1,13 @@
+@import "mixins";
+@import "vars";
+@import "reset";
+
+@import "../components/Header/header";
+
+@import "../components/Home/home";
+@import "../components/Home/components/apresentacao";
+@import "../components/Home/components/start-now";
+@import "../components/Home/components/steps";
+
+@import "../components/Footer/footer";
+@import "../components/Utils/utils";

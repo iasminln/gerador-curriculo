@@ -1,0 +1,46 @@
+.mensage-error {
+  font-size: size(12);
+  color: $color-eight;
+  margin-top: size(5);
+}
+
+.title-text {
+  font-size: size(38);
+  font-weight: 500;
+  margin: 0 0 size(10) 0;
+  font-family: $type-second;
+  position: relative;
+  z-index: 1;
+  left: size(6);
+  color: $color-two;
+
+  &::before {
+    content: '';
+    background: $color-one;
+    width: size(20);
+    height: size(20);
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    bottom: size(10);
+    z-index: -1;
+    left: size(-6);
+  }
+}
+
+.container-blue-box {
+  background-color: $color-one;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba($color-white, 0.1);
+  box-shadow: 5px 5px 10px rgba($color-black, 0.3);
+  color: $color-type;
+  @include fontSize(20);
+  @include display-flex($f: column, $j: space-between);
+  gap: 15px;
+
+}
+
+.highlight-text-color {
+  color: $color-two;
+}

@@ -1,0 +1,11 @@
+footer {
+  background-color: $color-one;
+
+  .container-footer {
+    @include container();
+    @include display-flex($j: start);
+    @include fontSize(20);
+    color: $color-type;
+    height: 80px;
+  }
+}

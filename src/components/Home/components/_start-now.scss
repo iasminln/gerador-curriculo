@@ -1,0 +1,53 @@
+.start-now {
+  background-color: $color-one;
+  padding: 80px 0;
+  margin: 40px 0;
+
+  .container {
+    @include container();
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    .container-texts {
+      @include display-flex($f: column);
+      gap: 30px;
+
+      .text-start-now {
+        color: $color-type;
+        @include fontSize(20);
+      }
+    }
+
+
+    .containet-button-start {
+      background-color: rgba($color-two, .7);
+      padding: 10px;
+      border-radius: 10px;
+      @include display-flex($f: column, $j: space-evenly);
+      width: size(350);
+      height: size(300);
+      justify-self: center;
+      outline: 4px solid $color-one;
+      outline-offset: -15px;
+
+      .title {
+        @include fontSize(30);
+        text-align: center;
+      }
+
+      button {
+        background-color: $color-one;
+        color: $color-type;
+        @include fontSize(18);
+        border: none;
+        border-radius: 20px;
+        padding: 14px 22px;
+        @include display-flex();
+        gap: 10px;
+      }
+    }
+  }
+}
+
+
