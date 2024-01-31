@@ -3,10 +3,20 @@
   padding: 80px 0;
   margin: 40px 0;
 
+  @include mq(850) {
+    padding: 50px 0;
+  }
+
+
   .container {
     @include container();
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    @include mq(850) {
+      @include display-flex($f: column);
+    }
 
 
     .container-texts {
@@ -16,6 +26,10 @@
       .text-start-now {
         color: $color-type;
         @include fontSize(20);
+
+        @include mq(850) {
+          @include fontSize(16);
+        }
       }
     }
 
@@ -25,11 +39,12 @@
       padding: 10px;
       border-radius: 10px;
       @include display-flex($f: column, $j: space-evenly);
-      width: size(350);
+      max-width: size(400);
       height: size(300);
-      justify-self: center;
+      justify-self: flex-end;
       outline: 4px solid $color-one;
       outline-offset: -15px;
+      width: 100%;
 
       .title {
         @include fontSize(30);
@@ -49,5 +64,3 @@
     }
   }
 }
-
-

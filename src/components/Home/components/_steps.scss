@@ -1,6 +1,93 @@
 .steps {
+  padding: 60px 0;
 
   .container {
+    position: relative;
     @include container();
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image text"
+      "image text"
+      "image text"
+      "image text"
+      ". ."
+      ". ."
+      ". ."
+      "box01 ."
+      "box01 ."
+      "box01 box02"
+      "box01 box02"
+      ". box02"
+      ". box02"
+      ". box02"
+
+
+    ;
+
+
+    gap: 20px 60px;
+    align-items: center;
+
+    @include mq(850) {
+      @include display-flex($f: column);
+      gap: 70px;
+    }
+
+    .image {
+      grid-area: image;
+    }
+
+    .title-steps {
+      @include fontSize(36);
+      font-weight: 700;
+      text-align: end;
+      grid-area: text;
+      position: relative;
+
+      @include mq(850) {
+        text-align: center;
+        @include fontSize(26);
+      }
+
+      .highlight-text-color {
+        @include fontSize(60, 20);
+
+        @include mq(850) {
+          @include fontSize(48);
+        }
+      }
+    }
+
+
+    .box01 {
+      grid-area: box01;
+      width: 100%;
+    }
+
+    .box02 {
+      grid-area: box02;
+
+      .box02-images {
+        @include display-flex($j: space-between);
+        width: 100%;
+        gap: 20px;
+      }
+    }
+  }
+
+  .image-zoom {
+    @include display-flex();
+    width: 100%;
+    margin: 10px 0;
+    transition: .3s;
+
+    &:hover {
+      .container-image-click img {
+        transform: scale(1.02);
+        border: 1px solid rgba($color-white, 1);
+      }
+      
+    }
   }
 }

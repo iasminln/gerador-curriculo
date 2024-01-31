@@ -1,32 +1,64 @@
 .mensage-error {
   font-size: size(12);
-  color: $color-eight;
   margin-top: size(5);
 }
 
-.title-text {
-  font-size: size(38);
-  font-weight: 500;
-  margin: 0 0 size(10) 0;
-  font-family: $type-second;
+.container-double-title {
   position: relative;
-  z-index: 1;
-  left: size(6);
-  color: $color-two;
+  margin: 0 0 -12px 80px;
 
-  &::before {
-    content: '';
-    background: $color-one;
-    width: size(20);
-    height: size(20);
-    border-radius: 2px;
-    display: block;
-    position: absolute;
-    bottom: size(10);
-    z-index: -1;
-    left: size(-6);
+  @include mq(500) {
+    margin: 0 0 -10px 40px;
   }
+
+  @include mq(400) {
+    margin: 0 0 -10px 5px;
+  }
+
+  .double-title-text {
+    @include fontSize(70);
+    font-weight: 400;
+    font-family: $type-second;
+    position: relative;
+    z-index: 1;
+    color: $color-two;
+    text-shadow:
+      -1px -1px 0px rgba($color: $color-black, $alpha: .4),
+      -1px 1px 0px rgba($color: $color-black, $alpha: .4),
+      1px -1px 0px rgba($color: $color-black, $alpha: .4),
+      1px 0px 0px rgba($color: $color-black, $alpha: .4);
+
+    @include mq(1000) {
+      @include fontSize(60);
+    }
+
+    @include mq(500) {
+      @include fontSize(48);
+    }
+  }
+  
+  .double-title-text-second {
+    position: absolute;
+    @include fontSize(90);
+    color: transparent;
+    z-index: 0;
+    font-family: $type-third;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba($color-white, 0.2);
+    bottom: -8px;
+
+    @include mq(1000) {
+      @include fontSize(70);
+    }
+
+    @include mq(500) {
+      @include fontSize(65);
+    }
+  }
+  
+
 }
+
 
 .container-blue-box {
   background-color: $color-one;
@@ -36,9 +68,13 @@
   box-shadow: 5px 5px 10px rgba($color-black, 0.3);
   color: $color-type;
   @include fontSize(20);
-  @include display-flex($f: column, $j: space-between);
+  @include display-flex($f: column, $j: space-between, $a: baseline);
   gap: 15px;
 
+  @include mq(850) {
+    @include fontSize(16);
+  }
+  
 }
 
 .highlight-text-color {
