@@ -37,7 +37,7 @@ const Benefits = () => {
         <ul className='list-benefits'>
           {listBenefits.map((item) => {
             return (
-              <div className='box-benefits'>
+              <div key={item.title} className='box-benefits'>
                 <p className='title-box-benefits'>{item.title}</p>
                 <p className='text-box-benefits'>{item.text}</p>
               </div>

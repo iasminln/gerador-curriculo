@@ -1,11 +1,23 @@
 header {
   background-color: $color-one;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 3px 6px $color-four;
 
   .container-logo {
     @include container();
     @include display-flex($j: start);
-    @include fontSize(20);
-    color: $color-type;
-    height: 80px;
+    height: $header-height;
+
+
+    .logo {
+      @include fontSize(20);
+      color: $color-type;
+      @include display-flex();
+      gap: 15px;
+    }
   }
 }

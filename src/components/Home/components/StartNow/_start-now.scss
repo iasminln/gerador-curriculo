@@ -51,7 +51,7 @@
         text-align: center;
       }
 
-      button {
+      .button-start-now {
         background-color: $color-one;
         color: $color-type;
         @include fontSize(18);
@@ -60,6 +60,7 @@
         padding: 14px 22px;
         @include display-flex();
         gap: 10px;
+
       }
     }
   }

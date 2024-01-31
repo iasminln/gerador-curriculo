@@ -1,9 +1,10 @@
-main {
+.creation {
   background: linear-gradient(30deg, $color-three 0%, $color-four 100%);
   margin-top: $header-height;
 
-  .container-home {
+  .container-creation {
     min-height: calc(100vh - (2 * 80px));
   }
 }
 
+  

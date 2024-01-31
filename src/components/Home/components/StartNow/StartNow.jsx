@@ -1,5 +1,6 @@
 import React from 'react'
 import { IconPointer } from '../icons'
+import { Link } from 'react-router-dom';
 
 
 const StartNow = () => {
@@ -16,7 +17,8 @@ const StartNow = () => {
         </div>
         <div className='containet-button-start'>
           <p className='title'>Vamos <br/> começar? :)</p>
-          <button>Clique aqui! <IconPointer color="#F5F4F8" width={20}/></button>
+          <Link className='button-start-now' to='/creation'>Clique aqui! <IconPointer color="#F5F4F8" width={20}/></Link>
+          
         </div>
       </div>
 

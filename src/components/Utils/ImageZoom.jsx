@@ -1,15 +1,28 @@
 import React, { useState } from 'react'
 import ImageWebp from './ImageWebp';
+import { IconClose } from './Icons';
 
 
 const ImageZoom = ({ imageBigPng, imageBigWebp, imageSmall, alt, ...props }) => {
   const [modalVisible, setModalVisible] = useState(false)
+  const getBody = document.body
+
+  const openModal = () => {
+    getBody.style.overflow = 'hidden'
+    setModalVisible(true)
+  }
+
+  const closeModal = () => {
+    getBody.style.overflow = 'auto'
+    setModalVisible(false)
+  }
 
   return (
     <div className='image-zoom'>
       {modalVisible ?
-        <div className='background-modal' onClick={() => setModalVisible(false)}>
+        <div className='background-modal' onClick={closeModal}>
           <div className='container-modal-image-zoom' onClick={(e) => e.stopPropagation()}>
+            <div className='button-close-modal' onClick={closeModal}><IconClose color="#0C0B26" width={20}/></div>
             <ImageWebp
               src={imageBigPng}
               srcWebp={imageBigWebp}
@@ -20,7 +33,7 @@ const ImageZoom = ({ imageBigPng, imageBigWebp, imageSmall, alt, ...props }) => 
         </div>
         : null
       }
-      <div className='container-image-click' onClick={() => setModalVisible(true)}>
+      <div className='container-image-click' onClick={openModal}>
         <img src={imageSmall} alt={alt} />
       </div>
     </div>
