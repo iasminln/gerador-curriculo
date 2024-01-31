@@ -1,21 +1,21 @@
 import React from 'react'
-import BlueBox from '../../Utils/BlueBox'
-import ImageWebp from '../../Utils/ImageWebp'
-import ImageSeeCurriculumPng from '../../../assets/image-see-curriculum.png'
-import ImageSeeCurriculumWebp from '../../../assets/image-see-curriculum.webp'
-import ImageZoom from '../../Utils/ImageZoom'
+import BlueBox from '../../../Utils/BlueBox'
+import ImageWebp from '../../../Utils/ImageWebp'
+import ImageSeeCurriculumPng from '../../../../assets/image-see-curriculum.png'
+import ImageSeeCurriculumWebp from '../../../../assets/image-see-curriculum.webp'
+import ImageZoom from '../../../Utils/ImageZoom'
 
-import Image01Jpg from '../../../assets/image-step-01-01.jpg'
-import Image01Webp from '../../../assets/image-step-01-01.webp'
-import Image01Mini from '../../../assets/image-step-01-01-mini.jpg'
+import Image01Jpg from '../../../../assets/image-step-01-01.jpg'
+import Image01Webp from '../../../../assets/image-step-01-01.webp'
+import Image01Mini from '../../../../assets/image-step-01-01-mini.jpg'
 
-import Image02Jpg from '../../../assets/image-step-02-01.jpg'
-import Image02Webp from '../../../assets/image-step-02-01.webp'
-import Image02Mini from '../../../assets/image-step-02-01-mini.jpg'
+import Image02Jpg from '../../../../assets/image-step-02-01.jpg'
+import Image02Webp from '../../../../assets/image-step-02-01.webp'
+import Image02Mini from '../../../../assets/image-step-02-01-mini.jpg'
 
-import Image03Jpg from '../../../assets/image-step-02-02.jpg'
-import Image03Webp from '../../../assets/image-step-02-02.webp'
-import Image03Mini from '../../../assets/image-step-02-02-mini.jpg'
+import Image03Jpg from '../../../../assets/image-step-02-02.jpg'
+import Image03Webp from '../../../../assets/image-step-02-02.webp'
+import Image03Mini from '../../../../assets/image-step-02-02-mini.jpg'
 
 
 
@@ -39,7 +39,7 @@ const Steps = () => {
 
 
         <div className='box-steps box01'>
-          <BlueBox title={"1º passo"} backTitle={true}>
+          <BlueBox title={"1º passo."} backTitle={true}>
             <p>Você já possui conta no GitHub? Esse é o primeito passo.</p>
             <p>Acesse o link: <a href="https://github.com/" target='_blank' rel="noreferrer"><span className='highlight-text-color'>https://github.com</span>.</a></p>
             <p>Clique em <em>Sign up</em>.</p>
@@ -53,7 +53,7 @@ const Steps = () => {
         </div>
 
         <div className='box-steps box02'>
-          <BlueBox title={"2º passo"} backTitle={true}>
+          <BlueBox title={"2º passo."} backTitle={true}>
             <p>
               Siga os próximos passos, preenchendo seu e-mail, username e criando uma boa senha. Após clicar em Continue, você fará um pequeno teste para provar que não é um robô 🤖
             </p>

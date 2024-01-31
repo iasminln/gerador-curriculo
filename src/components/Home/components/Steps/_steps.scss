@@ -59,6 +59,19 @@
       }
     }
 
+    .box-steps {
+      .container-double-title {
+        margin: 0 0 -12px 80px;
+
+        @include mq(500) {
+          margin: 0 0 -10px 40px;
+        }
+      
+        @include mq(400) {
+          margin: 0 0 -10px 5px;
+        }
+      }
+    }
 
     .box01 {
       grid-area: box01;

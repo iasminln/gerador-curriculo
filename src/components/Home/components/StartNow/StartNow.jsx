@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconPointer } from './icons'
+import { IconPointer } from '../icons'
 
 
 const StartNow = () => {

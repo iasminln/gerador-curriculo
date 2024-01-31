@@ -1,9 +1,9 @@
 import React from 'react'
-import ImageWebp from '../../Utils/ImageWebp'
-import MainImagePng from '../../../assets/main-image-logo.png'
-import MainImageWebp from '../../../assets/main-image-logo.webp'
-import BlueBox from '../../Utils/BlueBox'
-import { IconDesigner, IconDev, IconProfesional } from './icons'
+import ImageWebp from '../../../Utils/ImageWebp'
+import MainImagePng from '../../../../assets/main-image-logo.png'
+import MainImageWebp from '../../../../assets/main-image-logo.webp'
+import BlueBox from '../../../Utils/BlueBox'
+import { IconDesigner, IconDev, IconProfesional } from '../icons'
 
 const Apresentacao = () => {
 

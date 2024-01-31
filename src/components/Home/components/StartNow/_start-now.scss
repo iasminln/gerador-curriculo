@@ -35,7 +35,7 @@
 
 
     .containet-button-start {
-      background-color: rgba($color-two, .7);
+      background-color: rgba($color-two, .9);
       padding: 10px;
       border-radius: 10px;
       @include display-flex($f: column, $j: space-evenly);

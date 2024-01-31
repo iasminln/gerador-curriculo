@@ -1,7 +1,8 @@
 import React from 'react'
-import Apresentacao from './components/Apresentação'
-import StartNow from './components/StartNow'
-import Steps from './components/Steps'
+import Apresentacao from './components/Apresentacao/Apresentacao'
+import StartNow from './components/StartNow/StartNow'
+import Steps from './components/Steps/Steps'
+import Benefits from './components/Benefits/Benefits'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <Apresentacao/>
         <StartNow />
         <Steps/>
+        <Benefits />
       </div>
     </main>
   )
