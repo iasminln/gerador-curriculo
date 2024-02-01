@@ -1,0 +1,11 @@
+.creation-intro {
+  @include container();
+
+  .container {
+    padding: 40px 0;
+
+    p {
+      @include fontSize(16);
+    }
+  }
+}

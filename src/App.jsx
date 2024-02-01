@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Creation from './components/Creation/Creation';
+import Personalize from './components/Personalize/Personalize'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/creation' element={<Creation />} />
+          <Route path='/personalize' element={<Personalize />} />
         </Routes>
         <Footer />
       </HashRouter>

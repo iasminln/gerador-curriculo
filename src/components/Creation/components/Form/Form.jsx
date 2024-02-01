@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import InputDefault from './InputDefault'
+import { Link } from 'react-router-dom';
 
 const Form = () => {
 
@@ -40,6 +41,8 @@ const Form = () => {
             />
           )
         })}
+
+        <Link className='button-start-now' to='/personalize'>Continue</Link>
 
       </div>
     </section>
