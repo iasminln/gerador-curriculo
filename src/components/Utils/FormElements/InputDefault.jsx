@@ -1,7 +1,7 @@
 const InputDefault = ({ label, name, type, valueRef, isTextarea, ...props }) => {
 
   return (
-    <div className={`wrapper-input ${isTextarea && 'is-textarea'}`}>
+    <div className={`wrapper-input ${isTextarea && 'is-textarea'} ${type === 'color' && 'input-color'}`}>
       <label className='form-label' htmlFor={name}>{label}</label>
 
       {isTextarea ?
@@ -10,7 +10,7 @@ const InputDefault = ({ label, name, type, valueRef, isTextarea, ...props }) => 
           type={type}
           id={name}
           name={name}
-          onBlur={() => localStorage.setItem(`form-${name}`, valueRef.current.value)}
+          onBlur={() => valueRef && localStorage.setItem(`form-${name}`, valueRef.current.value)}
           ref={valueRef}
           {...props}
         />
@@ -20,7 +20,7 @@ const InputDefault = ({ label, name, type, valueRef, isTextarea, ...props }) => 
           type={type}
           id={name}
           name={name}
-          onBlur={() => localStorage.setItem(`form-${name}`, valueRef.current.value)}
+          onBlur={() => valueRef && localStorage.setItem(`form-${name}`, valueRef.current.value)}
           ref={valueRef}
           {...props}
         />

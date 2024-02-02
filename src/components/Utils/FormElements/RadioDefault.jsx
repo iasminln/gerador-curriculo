@@ -2,9 +2,8 @@ const RadioDefault = ({ label, options, name, ...props }) => {
 
   return (
     <div className={`wrapper-radio`}>
-      <h2 className='form-label'>{label}</h2>
+      <label className='form-label'>{label}</label>
       {options.map((item, index) => {
-
         return (
           <label key={`${name}-${item}`}>
             <input

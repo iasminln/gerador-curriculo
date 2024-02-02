@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import InputDefault from './InputDefault'
+import InputDefault from '../../../Utils/FormElements/InputDefault'
 import { Link } from 'react-router-dom';
 
 const Form = () => {

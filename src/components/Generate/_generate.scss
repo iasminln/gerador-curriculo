@@ -1,0 +1,12 @@
+.generate {
+  background: linear-gradient(30deg, $color-three 0%, $color-four 100%);
+  margin-top: $header-height;
+  padding-top: 30px;
+  
+  .container-generate {
+    min-height: calc(100vh - (2 * 80px));
+    @include container();
+
+  }
+}
+
