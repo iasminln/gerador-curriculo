@@ -11,7 +11,7 @@ import Generate from './components/Generate/Generate';
 
 const App = () => {
   return (
-    <>
+    <div className='app'>
       <HashRouter>
         <Header />
         <Routes>
@@ -22,7 +22,7 @@ const App = () => {
         </Routes>
         <Footer />
       </HashRouter>
-    </>
+    </div>
   );
 };
 
