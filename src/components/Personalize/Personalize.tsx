@@ -1,19 +1,16 @@
-import React from 'react'
-import PeronalizeIntro from './components/Intro/PeronalizeIntro'
-import Form from './components/Form/FormPersonalize'
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import PeronalizeIntro from "./components/Intro/PeronalizeIntro";
+import Form from "./components/Form/FormPersonalize";
 
 const Personalize = () => {
   return (
-    <section className='personalize'>
-      <div className='container-personalize'>
-        <Link className='button-start-now' to='/creation'>Voltar</Link>
+    <section className="personalize">
+      <div className="container-personalize">
         <PeronalizeIntro />
-        <Form/>
+        <Form />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Personalize
+export default Personalize;

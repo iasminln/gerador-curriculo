@@ -1,6 +1,11 @@
 .creation-form {
   @include container();
 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .form-label {
     @include fontSize(16);
     margin-bottom: 8px;
@@ -13,6 +18,27 @@
     border: 1px solid $color-one;
     border-radius: 5px;
     width: 100%;
+  }
+
+  .form-title {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
     margin-bottom: 20px;
+  }
+
+  .text-suport {
+    font-size: 12px;
+    margin: 2px 0 0 0;
+  }
+
+  .grid-form-01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+
+    @include mq(750) {
+      grid-template-columns: 1fr;
+    }
   }
 }

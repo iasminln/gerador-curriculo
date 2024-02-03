@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ImageWebp from './ImageWebp';
-import { IconClose } from './Icons';
+import { IconClose } from './Icons/IconClose';
 
 
 const ImageZoom = ({ imageBigPng, imageBigWebp, imageSmall, alt, ...props }) => {
@@ -22,7 +22,7 @@ const ImageZoom = ({ imageBigPng, imageBigWebp, imageSmall, alt, ...props }) => 
       {modalVisible ?
         <div className='background-modal' onClick={closeModal}>
           <div className='container-modal-image-zoom' onClick={(e) => e.stopPropagation()}>
-            <div className='button-close-modal' onClick={closeModal}><IconClose color="#0C0B26" width={20}/></div>
+            <div className='button-close-modal' onClick={closeModal}><IconClose color="#0C0B26" width={20} /></div>
             <ImageWebp
               src={imageBigPng}
               srcWebp={imageBigWebp}

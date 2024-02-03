@@ -16,9 +16,9 @@ const StartNow = () => {
           </p>
         </div>
         <div className='containet-button-start'>
-          <p className='title'>Vamos <br/> começar? :)</p>
-          <Link className='button-start-now' to='/creation'>Clique aqui! <IconPointer color="#F5F4F8" width={20}/></Link>
-          
+          <p className='title'>Vamos <br /> começar? :)</p>
+          <Link className='button-start-now' to='/creation/page1'>Clique aqui! <IconPointer color="#F5F4F8" width={20} /></Link>
+
         </div>
       </div>
 

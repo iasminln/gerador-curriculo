@@ -3,6 +3,10 @@
   margin-bottom: 8px;
 }
 
+.wrapper-input {
+  margin-bottom: 30px;
+}
+
 .wrapper-input:not(.input-color):not(.is-textarea) .form-input {
   @include fontSize(16);
   color: $color-one;
@@ -10,10 +14,10 @@
   border: 1px solid $color-one;
   border-radius: 5px;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .wrapper-input.is-textarea .form-input {
-  width: 400px;
-  height: 200px;
+  min-width: 300px;
+  min-height: 200px;
+  width: 100%;
 }

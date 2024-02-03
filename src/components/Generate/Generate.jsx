@@ -1,5 +1,7 @@
 import React from 'react'
 import InputDefault from '../Utils/FormElements/InputDefault';
+import { Link } from 'react-router-dom';
+import { IconArrowRight } from '../Utils/Icons/IconArrowRight';
 
 const Generate = () => {
 
@@ -18,8 +20,8 @@ const Generate = () => {
       
         <style>
           main {
-            background: ${getInfo('form-color-background')};
-            color: ${getInfo('form-color-text')};
+            background: ${getInfo('form-css-color-background')};
+            color: ${getInfo('form-css-color-text')};
             font-size: 22px;
             font-weight: 700;
             height: 100vh;
@@ -52,14 +54,15 @@ const Generate = () => {
   return (
     <section className='generate'>
       <div className='container-generate'>
+        <Link className='button-form back' to='/personalize'><IconArrowRight width={20} color='#ffffff' />Voltar</Link>
         <InputDefault
-          rows='5'
+          rows={4}
           cols='10'
           isTextarea={true}
           value={htmlText}
           readOnly
         />
-        <button onClick={openPreviewWindow}>Clique para visualizar a página</button>
+        <button className='button-form' onClick={openPreviewWindow}>Clique para visualizar a página</button>
       </div>
     </section>
   )

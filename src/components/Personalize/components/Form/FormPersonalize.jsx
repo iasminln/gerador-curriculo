@@ -1,6 +1,7 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 import InputDefault from '../../../Utils/FormElements/InputDefault'
 import { Link } from 'react-router-dom'
+import { IconArrowRight } from '../../../Utils/Icons/IconArrowRight'
 
 const Form = () => {
 
@@ -8,13 +9,13 @@ const Form = () => {
     {
       label: 'Defina cor do fundo',
       type: 'color',
-      name: 'color-background',
+      name: 'css-color-background',
       valueRef: useRef(null),
     },
     {
       label: 'Defina cor do texto',
       type: 'color',
-      name: 'color-text',
+      name: 'css-color-text',
       valueRef: useRef(null),
     }
   ]
@@ -28,9 +29,9 @@ const Form = () => {
           name='text-position'
           options={options}
         /> */}
+        <Link className='button-form back' to='/creation/page2'><IconArrowRight width={20} color='#ffffff' />Voltar</Link>
 
-
-          {personalizeQuestion.map((item) => {
+        {personalizeQuestion.map((item) => {
 
           return (
             <InputDefault
@@ -42,10 +43,10 @@ const Form = () => {
               defaultValue={localStorage.getItem(`form-${item.name}`)}
             />
           )
-          })}
+        })}
 
 
-        <Link className='button-start-now' to='/generate'>Gerar página!</Link>
+        <Link className='button-form' to='/generate'>Gerar página! <IconArrowRight width={20} color='#ffffff' /></Link>
 
       </div>
     </section>
