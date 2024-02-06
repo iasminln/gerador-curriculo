@@ -78,7 +78,7 @@
   transition: .3s ease-in-out;
 }
 
-.button-form:hover {
+.button-form:not(:disabled):hover {
   cursor: pointer;
   border: 2px solid $color-one;
   background: #ffffff;
@@ -86,6 +86,10 @@
   box-shadow:
     -1px -1px 1px #ffffff,
     1px 1px 1px #ffffff;
+}
+
+.button-form:disabled {
+  opacity: .5;
 }
 
 .button-form:hover svg,

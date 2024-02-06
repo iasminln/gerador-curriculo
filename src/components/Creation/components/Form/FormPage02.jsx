@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import InputDefault from '../../../Utils/FormElements/InputDefault'
 import { Link } from 'react-router-dom';
 import { IconArrowRight } from '../../../Utils/Icons/IconArrowRight';
+import ContainerFormGenerator from './utils/ContainerFormGenerator';
 
 const FormPage02 = () => {
 
@@ -12,13 +13,6 @@ const FormPage02 = () => {
       type: 'text',
       isTextarea: true,
       name: 'professional-resume',
-      valueRef: useRef(null),
-    },
-    {
-      label: 'Experiências profissionais',
-      type: 'text',
-      isTextarea: true,
-      name: 'job-experiences',
       valueRef: useRef(null),
     }
   ]
@@ -45,6 +39,7 @@ const FormPage02 = () => {
             )
           })}
         </div>
+        <ContainerFormGenerator />
 
         <Link className='button-form' to='/personalize'>Continue <IconArrowRight width={20} color='#ffffff' /></Link>
 
