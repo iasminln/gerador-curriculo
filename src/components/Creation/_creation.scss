@@ -2,4 +2,10 @@
   background: linear-gradient(30deg, $color-three 0%, $color-four 100%);
   margin-top: $header-height;
   min-height: calc(100vh - $header-height - $footer-height);
+
+  .container-creation {
+    @include container();
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

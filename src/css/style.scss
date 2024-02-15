@@ -1,6 +1,7 @@
 @import "mixins";
 @import "vars";
 @import "reset";
+@import "global";
 
 @import "../components/Header/header";
 
@@ -16,7 +17,6 @@
 @import "../components/Utils/FormElements/form-elements";
 
 @import "../components/Creation/creation";
-@import "../components/Creation/components/Intro/intro";
 @import "../components/Creation/components/Form/form";
 
 @import "../components/Personalize/personalize";

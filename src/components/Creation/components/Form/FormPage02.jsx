@@ -14,21 +14,22 @@ const FormPage02 = () => {
       isTextarea: true,
       name: 'professional-resume',
       valueRef: useRef(null),
+      singleClass: 'column-full-width'
     }
   ]
 
   return (
     <section className='creation-form'>
       <div className='container'>
-        <Link className='button-form back' to='/creation/page1'><IconArrowRight width={20} color='#ffffff' />Voltar</Link>
-        <p className='form-title'>Informações profissionais</p>
+        <Link className='button-form back animation' to='/creation/page1'><IconArrowRight width={20} color='#ffffff' />Voltar</Link>
+        <p className='title-text-20'>Informações profissionais</p>
         <div className='grid-form grid-form-01'>
           {infosCurriculum.map((item, index) => {
             return (
               <InputDefault
                 key={item.name}
                 legend={item.legend}
-                extraClass={`input-initial-infos-${index} input-${index}`}
+                extraClass={`input-initial-infos-${index} input-${index} ${item.singleClass}`}
                 type={item.type}
                 label={item.label}
                 name={item.name}
@@ -41,7 +42,7 @@ const FormPage02 = () => {
         </div>
         <ContainerFormGenerator />
 
-        <Link className='button-form' to='/personalize'>Continue <IconArrowRight width={20} color='#ffffff' /></Link>
+        <Link className='button-form animation' to='/creation/page3'>Continue <IconArrowRight width={20} color='#ffffff' /></Link>
 
       </div>
     </section>

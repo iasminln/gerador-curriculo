@@ -29,7 +29,7 @@ const Form = () => {
           name='text-position'
           options={options}
         /> */}
-        <Link className='button-form back' to='/creation/page2'><IconArrowRight width={20} color='#ffffff' />Voltar</Link>
+        <Link className='button-form back animation' to='/creation/page2'><IconArrowRight width={20} color='#ffffff' />Voltar</Link>
 
         {personalizeQuestion.map((item) => {
 
@@ -46,7 +46,7 @@ const Form = () => {
         })}
 
 
-        <Link className='button-form' to='/generate'>Gerar página! <IconArrowRight width={20} color='#ffffff' /></Link>
+        <Link className='button-form animation' to='/generate'>Gerar página! <IconArrowRight width={20} color='#ffffff' /></Link>
 
       </div>
     </section>

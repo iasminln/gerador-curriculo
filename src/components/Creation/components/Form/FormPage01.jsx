@@ -53,7 +53,8 @@ const FormPage01 = () => {
   return (
     <section className='creation-form'>
       <div className='container'>
-        <p className='form-title'>Informações iniciais de contato</p>
+        <p className='title-text-20'>Informações iniciais de contato</p>
+        <p className='pg-text-16'>Nesta seção inicial, serão feitas algumas perguntas relacionadas a você e à sua trajetória profissional. Essas informações serão utilizadas para compor o seu currículo.</p>
         <div className='grid-form grid-form-01'>
           {infosCurriculum.map((item, index) => {
             return (
@@ -71,7 +72,7 @@ const FormPage01 = () => {
           })}
         </div>
 
-        <Link className='button-form' to='/creation/page2'>Continue <IconArrowRight width={20} color='#ffffff' /></Link>
+        <Link className='button-form animation' to='/creation/page2'>Continue <IconArrowRight width={20} color='#ffffff' /></Link>
 
       </div>
     </section>

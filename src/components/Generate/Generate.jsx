@@ -54,7 +54,7 @@ const Generate = () => {
   return (
     <section className='generate'>
       <div className='container-generate'>
-        <Link className='button-form back' to='/personalize'><IconArrowRight width={20} color='#ffffff' />Voltar</Link>
+        <Link className='button-form back animation' to='/personalize'><IconArrowRight width={20} color='#ffffff' />Voltar</Link>
         <InputDefault
           rows={4}
           cols='10'

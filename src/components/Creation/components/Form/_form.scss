@@ -1,6 +1,4 @@
 .creation-form {
-  @include container();
-
   .container {
     display: flex;
     flex-direction: column;
@@ -20,18 +18,6 @@
     width: 100%;
   }
 
-  .form-title {
-    font-size: 20px;
-    line-height: 1;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-
-  .text-suport {
-    font-size: 12px;
-    margin: 2px 0 0 0;
-  }
-
   .grid-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,5 +26,14 @@
     @include mq(750) {
       grid-template-columns: 1fr;
     }
+
+    .column-full-width {
+      grid-column: 1/-1;
+    }
+  }
+
+  .buttons__double {
+    @include display-flex($j: flex-start);
+    gap: 20px;
   }
 }

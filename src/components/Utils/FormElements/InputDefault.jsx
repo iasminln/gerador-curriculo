@@ -72,7 +72,7 @@ const InputDefault = ({ label, name, type, valueRef, isTextarea, extraClass, leg
     <div className={`wrapper-input ${isTextarea && 'is-textarea'} ${type === 'color' && 'input-color'} ${extraClass}`}>
       <label className='form-label' htmlFor={name}>{label}</label>
       {render()}
-      <p className="text-suport">{legend}</p>
+      <p className="pg-text-12">{legend}</p>
     </div>
   )
 }
